@@ -73,6 +73,7 @@ p{
     top: 260px;
     left: 33%;
     max-inline-size: 60%;
+    min-width: 600px;
 }
 
 hr {
