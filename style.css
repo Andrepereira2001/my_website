@@ -9,22 +9,18 @@ body {
 }
 
 nav{
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
     background-color: rgb(62, 93, 139);
-    width: 100%;
-    height: 100px;
-    border-top: 1px solid  rgb(62, 93, 139);
-    margin: 0 auto;
 }
 
-nav li {
-    display: inline-block;
+nav a{
     font-size: 30px;
-    font-weight: 250;
-    position: relative;
-    left: 15%;
-    margin-left: 65px;
+    min-width: 150px;
 }
+
 nav a:link,nav a:visited{
     text-decoration: none;
     color: rgb(239, 246, 253);
