@@ -53,9 +53,12 @@ p{
 
 #about_me{
     left: 42%;
-    top: 30px;
+    top: 10px;
 }
 
+.about_me_div {
+
+}
 .photo{
     margin-bottom: 40px;
     border-radius: 50%;
@@ -111,7 +114,22 @@ hr {
 }
 
 /*skills space*/
-.skills_div li{
+
+.skill_icon{
+    margin: 100px 120px 30px 120px;
+    width: 100px;
+    flex: 0 0;
+}
+
+.skills_icons{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+/*.skills_div li{
     position: relative;
     display: inline-block;
     top: 30px;
@@ -121,10 +139,14 @@ hr {
 .skills_div li img{
     width: 100px;
     height: 100px;
-}
+}*/
  
-#CSS_icon, HTML_icon{
-    width: 80px;
+#CSS_icon{
+    width: 90px;
+}
+
+#HTML_icon{
+    width: 120px;
 }
 
 #Cpp_icon{
