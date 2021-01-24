@@ -52,30 +52,34 @@ p{
 }
 
 #about_me{
-    left: 42%;
-    top: 10px;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    top:10px;
 }
 
 .about_me_div {
-
+    display: flex;
 }
+
 .photo{
+    flex: 0 1;
+    position: relative;
     margin-bottom: 40px;
     border-radius: 50%;
-    position: relative;
     left: 10%;
-    width: 19%;
+    width: 20%;
+    height: 20%;
     top: 50px;
     border: 3px solid rgb(62, 93, 139);
     
 }
 
 .my_description{
-    position: absolute;
-    top: 250px;
-    left: 33%;
-    max-inline-size: 60%;
-    min-width: 600px;
+    position: relative;
+    left: 15%;
+    max-width: 63%;
+    top: 35px
 }
 
 hr {
@@ -116,13 +120,14 @@ hr {
 /*skills space*/
 
 .skill_icon{
-    margin: 100px 120px 30px 120px;
+    margin: 100px 100px 40px 100px;
     width: 100px;
-    flex: 0 0;
 }
 
 .skills_icons{
-    width: 100%;
+    position: relative;
+    left: 5%;
+    width: 90%;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -153,21 +158,31 @@ hr {
     width: 90px;
 }
 
+#C_icon{
+    width: 110px;
+    height: 110px;
+}
+
 /*Contacts place*/
 
 #contacts{
-    left: 41%;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+}
+
+.icons{
+    text-align: center;
 }
 
 .icon{
     border-radius: 50%;
     position: relative;
     margin: 0px 40px;
-    margin-bottom: 150px;
-    top: 85px;
-    left: 39%;
+    margin-bottom: 120px;
+    top: 65px;
     width: 45px;
-    border: 3px solid rgba(225, 228, 226,0.5);
+    border: 3px solid rgba(225, 225, 228, 0.5);
 }
 
 .icon:hover{
