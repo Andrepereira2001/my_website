@@ -1,6 +1,7 @@
 * {
     box-sizing: content-box;
     font-family: 'Glegoo', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,13 +25,14 @@ nav a{
 nav a:link,nav a:visited{
     text-decoration: none;
     color: rgb(239, 246, 253);
-    width: 90px;
+    width: 180px;
     padding: 10px 20px;
+    transition: font-size 0.5s, text-shadow 0.5s;
 }
 
 nav a:hover,nav a:active{
-    /*color: rgb(62, 93, 139);*/
-    text-decoration: underline;
+    font-size: 35px;
+    text-shadow: -5px 5px 5px black;
 }
 
 h1{
@@ -68,13 +70,20 @@ p{
     height: 20%;
     top: 50px;
     border: 3px solid rgb(62, 93, 139);
-    
+    /*transform: rotate(180deg);
+    transition: transform 2s;*/
+    box-shadow: -5px 5px 25px 1px rgb(62, 93, 139);
 }
+
+/*
+.photo:hover{
+    animation: full_rotation 1.5s linear 0s infinite;
+}*/
 
 .my_description{
     position: relative;
     left: 15%;
-    max-width: 63%;
+    max-width: 60%;
     top: 35px
 }
 
@@ -105,9 +114,28 @@ hr {
     max-inline-size: 80%;
 }
 
+/*
+.gold_miner_car{
+    display: flex;
+    align-items: center;
+}
+
+.gold_miner_car img{
+    position: relative;
+    width: 50px;
+    height: 60px;
+    animation: car_movement 5s linear 0.2s infinite;
+    animation-direction: alternate;
+}*/
+
+.video_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .gold_miner_video{
     position: relative;
-    left: 34%;
     top: 90px;
     border: 3px solid rgb(62, 93, 139);
     margin-bottom: 70px;
@@ -116,8 +144,9 @@ hr {
 /*skills space*/
 
 .skill_icon{
-    margin: 100px 100px 40px 100px;
-    width: 100px;
+    margin: 100px 70px 20px 70px;
+    width: 70px;
+    height: 70px;
 }
 
 .skills_icons{
@@ -130,33 +159,21 @@ hr {
     align-content: center;
 }
 
-/*.skills_div li{
-    position: relative;
-    display: inline-block;
-    top: 30px;
-    margin: 60px 120px;
-}
-
-.skills_div li img{
-    width: 100px;
-    height: 100px;
-}*/
- 
 #CSS_icon{
-    width: 90px;
+    width: 55px;
 }
 
 #HTML_icon{
-    width: 120px;
+    width: 70px;
 }
 
 #Cpp_icon{
-    width: 90px;
+    width: 60px;
 }
 
 #C_icon{
-    width: 110px;
-    height: 110px;
+    width: 75px;
+    height: 75px;
 }
 
 /*Contacts place*/
@@ -175,12 +192,56 @@ hr {
     border-radius: 50%;
     position: relative;
     margin: 0px 40px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     top: 65px;
     width: 45px;
     border: 3px solid rgba(225, 225, 228, 0.5);
+    transition-property: border;
+    transition-duration: 500ms;
 }
 
 .icon:hover{
     border: 3px solid rgb(62, 93, 139);
 }
+
+
+.copyright{
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+/* FUTURE IMPLEMENTATIONS WITH ANIMATIONS
+@keyframes full_rotation{
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); content: url("img/Python_icon.png"); opacity: 0.2;}
+}
+
+@keyframes car_movement{
+    0% {transform: translate(0%); content: url("img/gold-miner/car1.png");}
+    5% {transform: translate(100%); content: url("img/gold-miner/car2.png");}
+    10% {transform: translate(200%); content: url("img/gold-miner/car3.png");}
+    15% {transform: translate(300%); content: url("img/gold-miner/car4.png");}
+    20% {transform: translate(400%); content: url("img/gold-miner/car1.png");}
+    25% {transform: translate(500%); content: url("img/gold-miner/car2.png");}
+    30% {transform: translate(600%); content: url("img/gold-miner/car3.png");}
+    35% {transform: translate(700%); content: url("img/gold-miner/car4.png");}
+    40% {transform: translate(800%); content: url("img/gold-miner/car2.png");}
+    45% {transform: translate(900%); content: url("img/gold-miner/car3.png");}
+    50% {transform: translate(1000%); content: url("img/gold-miner/car4.png");} 
+    55% {transform: translate(1100%); content: url("img/gold-miner/car1.png");}
+    60% {transform: translate(1200%); content: url("img/gold-miner/car2.png");}
+    65% {transform: translate(1300%); content: url("img/gold-miner/car3.png");}
+    70% {transform: translate(1400%); content: url("img/gold-miner/car4.png");}
+    75% {transform: translate(1500%); content: url("img/gold-miner/car1.png");}
+    80% {transform: translate(1600%); content: url("img/gold-miner/car2.png");}
+    85% {transform: translate(1700%); content: url("img/gold-miner/car3.png");}
+    90% {transform: translate(1800%); content: url("img/gold-miner/car4.png");}
+    95% {transform: translate(1900%); content: url("img/gold-miner/car1.png");}
+    100% {transform: translate(2000%); content: url("img/gold-miner/car2.png");}
+}
+*/
+
+
